@@ -21,8 +21,27 @@ th {
     text-align: center !important; /* Centrar el texto en los encabezados de columna */
 
 }
+.dataTables_filter {
+    text-align: right;
+    margin-bottom: 10px;
+}
 
+.dataTables_length {
+    text-align: left;
+    margin-bottom: 10px;
+}
 
+.dataTables_paginate {
+    text-align: center;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.btnTest {
+    margin-bottom: 10px;
+}
 /* Personalizar el color de fondo y texto del card-header */
 .card-title {
     color: #08d9d6; /* Cambia el color del texto según tu preferencia */
@@ -113,6 +132,11 @@ th {
 }
 
 /* Estilos para el encabezado de la tarjeta */
+.card {
+    margin-bottom: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
 .card-header {
     background-color: #252a34; /* Cambia el color de fondo según tu preferencia */
     color: #ffffff; /* Cambia el color del texto según tu preferencia */
