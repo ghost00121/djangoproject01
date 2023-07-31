@@ -27,34 +27,44 @@
 {% endblock %}
 
 {% block content %}
-    <div class="card card-primary">
-        <div class="card-header"  style="background-color: #252a34">
-            <h3 class="card-title">
-                <i class="fas fa-search"></i>
-                {{ title }}
-            </h3>
-        </div>
-        <div class="card-body">
-            <table class="table" id="data">
-                <thead>
-                {% block columns %}
-
-                {% endblock %}
-                </thead>
-                <tbody>
-                {% block rows %}
-
-                {% endblock %}
-                </tbody>
-            </table>
-        </div>
-        <div class="card-footer">
-            <a href="{{ create_url }}" class="btn btn-primary btn-flat btnTest">
-                <i class="fas fa-plus"></i> Nuevo registro
-            </a>
-            <a href="{{ list_url }}" class="btn btn-success btn-flat">
-                <i class="fas fa-sync"></i> Actualizar
-            </a>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card card-primary">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <i class="fas fa-search"></i>
+                            {{ title }}
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table" id="data">
+                                <thead>
+                                {% block columns %}
+                                <!-- Contenido de las columnas de la tabla aquí -->
+                                {% endblock %}
+                                </thead>
+                                <tbody>
+                                {% block rows %}
+                                <!-- Contenido de las filas de la tabla aquí -->
+                                {% endblock %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-between">
+                            <a href="{{ create_url }}" class="btn btn-primary btnTest">
+                                <i class="fas fa-plus"></i> Nuevo registro
+                            </a>
+                            <a href="{{ list_url }}" class="btn btn-success btn-flat">
+                                <i class="fas fa-sync"></i> Actualizar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 {% endblock %}
