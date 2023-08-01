@@ -1,5 +1,5 @@
 .card-header {
-    background-color: #252a34 !important; /* Cambia el color de fondo según tu preferencia */
+    background-color: #010e0e !important; /* Cambia el color de fondo según tu preferencia */
     color: #08d9d6 !important; /* Cambia el color del texto según tu preferencia */
     padding: 10px; /* Espaciado interno */
     border-bottom: 1px solid #252a34; /* Borde inferior */
@@ -9,7 +9,7 @@
 .card-title {
     color: #08d9d6 !important; /* Cambia el color del texto según tu preferencia */
     padding: 10px; /* Espaciado interno */
-    border-bottom: 1px solid #252a34; /* Borde inferior */
+    border-bottom: 1px solid #010e0e; /* Borde inferior */
     border-radius: 4px 4px 0 0; /* Radio de los bordes */
 }
 
