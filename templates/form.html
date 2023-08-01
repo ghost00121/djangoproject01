@@ -1,6 +1,12 @@
 {% extends 'layout.html' %}
+{% load static %}
+
 {% load widget_tweaks %}
 {% block content %}
+    {% block head_list %}
+    <link type= "text/css" href="{% static 'css/form/form.css' %}" rel="stylesheet">
+    {% endblock %}
+    
     <form method="post" action="." enctype="multipart/form-data">
         <div class="card card-primary">
             <div class="card-header" style="background-color: #252a34">

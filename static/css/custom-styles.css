@@ -1,299 +1,117 @@
-/* Estilos generales para la tabla */
-table {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 0;
-    background-color: #252a34;
-    color: #ffffff;
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #252a34; /* Color de fondo de la barra de navegación */
+    border: 1px solid #08d9d6;;
 }
 
-/* Estilos para las celdas de la tabla */
-td, th {
-    padding: 8px;
-    border: 1px solid #08d9d6;
-    text-align: center; /* Centrar el texto en las celdas y en los encabezados */
+/* Estilos para los enlaces en la barra de navegación */
+.navbar a.nav-link {
+    color: #08d9d6; /* Color del texto de los enlaces */
 }
 
-/* Estilos para los encabezados de columna */
-th {
-    background-color: #010e0e;
-    font-weight: bold;
-    text-align: center !important; /* Centrar el texto en los encabezados de columna */
-
-}
-.dataTables_filter {
-    text-align: right;
-    margin-bottom: 10px;
+/* Estilos para el enlace de "Home" */
+.navbar a.nav-link:first-child {
+    color: #08d9d6; /* Color del texto del enlace "Home" */
 }
 
-.dataTables_length {
-    text-align: left;
-    margin-bottom: 10px;
+/* Estilos para el ícono de usuarios en la barra de navegación */
+.navbar a.nav-link i {
+    color: #08d9d6; /* Color del ícono de usuarios */
 }
 
-.dataTables_paginate {
-    text-align: center;
+/* Estilos para el menú desplegable */
+.dropdown-menu {
+    background-color: #252a34; /* Color de fondo del menú desplegable */
 }
 
-.table-responsive {
-    overflow-x: auto;
+/* Estilos para el encabezado del menú desplegable */
+.dropdown-menu .dropdown-header {
+    color: #08d9d6; /* Color del texto del encabezado del menú desplegable */
 }
 
-.btnTest {
-    margin-bottom: 10px;
-}
-/* Personalizar el color de fondo y texto del card-header */
-.card-title {
-    color: #08d9d6; /* Cambia el color del texto según tu preferencia */
+/* Estilos para los elementos del menú desplegable */
+.dropdown-menu .dropdown-item {
+    color: #08d9d6; /* Color del texto de los elementos del menú desplegable */
 }
 
-/* Personalizar el color de fondo y texto del card-body */
-.card-body {
-    background-color: #252a34; /* Cambia el color del fondo según tu preferencia */
-    color: #08d9d6; /* Cambia el color del texto según tu preferencia */
+/* Estilos para el pie de página del menú desplegable */
+.dropdown-menu .dropdown-footer {
+    color: #08d9d6; /* Color del texto del pie de página del menú desplegable */
 }
 
-/* Personalizar el color de fondo y texto del card-footer */
-.card-footer {
-    background-color: #252a34; /* Cambia el color del fondo según tu preferencia */
-    color: #08d9d6; /* Cambia el color del texto según tu preferencia */
-}
-.custom-content-wrapper{
-    background-color: #252a34; /* Cambia el color del fondo según tu preferencia */
-    color: #08d9d6; /* Cambia el color del texto según tu preferencia */
+/* Estilos para la clase custom-content-header */
+.custom-content-header {
+    background-color: #252a34; /* Color de fondo del header */
 }
 
-/* Personalizar los campos de búsqueda */
-
-
-/* Estilos para el desplegable "Show entries" */
-.custom-select {
-    background-color: #252a34; /* Color de fondo en estado normal */
-    color: #08d9d6; /* Color del texto en estado normal */
-    border: 1px solid #08d9d6; /* Borde en estado normal */
-    border-radius: 4px; /* Radio de los bordes en estado normal */
-    padding: 6px 10px; /* Espaciado interno en estado normal */
+/* Estilos para el texto dentro del header */
+.custom-content-header h1, .custom-content-header small {
+    color: #08d9d6; /* Color del texto dentro del header */
 }
 
-/* Estilos para el desplegable "Show entries" en estado activo o enfocado */
-.custom-select:focus {
-    background-color: #252a34; /* Color de fondo en estado activo o enfocado */
-    color: #08d9d6; /* Color del texto en estado activo o enfocado */
-    outline: none; /* Eliminar el borde de enfoque predeterminado */
-    box-shadow: 0 0 0 2px #08d9d6; /* Agregar un borde de enfoque personalizado */
+/* Estilos para los enlaces dentro del header */
+.custom-content-header a {
+    color: #08d9d6; /* Color del texto de los enlaces dentro del header */
 }
 
-.form-control.form-control-sm {
-    background-color: #252a34; /* Cambia el color de fondo según tu preferencia */
-    color: #ffffff; /* Cambia el color del texto según tu preferencia */
-    border: 1px solid #08d9d6; /* Borde en estado normal */
-    border-radius: 4px; /* Radio de los bordes */
-    padding: 6px 10px; /* Espaciado interno */
+/* Estilos para los enlaces de breadcrumb dentro del header */
+.custom-content-header .breadcrumb-item a {
+    color: #08d9d6; /* Color del texto de los enlaces de breadcrumb */
 }
 
-/* Estilos para los botones de paginación */
-.pagination .page-link {
-    background-color: #252a34; /* Cambia el color de fondo según tu preferencia */
-    color: #ffffff; /* Cambia el color del texto según tu preferencia */
-    border: 1px solid #08d9d6; /* Borde en estado normal */
-    border-radius: 4px; /* Radio de los bordes */
-    padding: 6px 12px; /* Espaciado interno */
-    margin-right: 5px; /* Espaciado entre botones */
+/* Estilos para el fondo del breadcrumb */
+.custom-breadcrumb {
+    background-color: #252a34; /* Color de fondo del breadcrumb */
 }
 
-/* Estilos para el botón activo */
-.pagination .page-item.active .page-link {
-    background-color: #08d9d6; /* Cambia el color de fondo según tu preferencia */
-    color: #252a34; /* Cambia el color del texto según tu preferencia */
-    border-color: #08d9d6; /* Borde en estado activo */
+/* Estilos para el fondo del custom-content-wrapper */
+.custom-content-wrapper {
+    background-color: #010e0e; /* Color de fondo del custom-content-wrapper */
 }
 
-/* Estilos para el botón deshabilitado */
-.pagination .page-item.disabled .page-link {
-    background-color: #252a34; /* Cambia el color de fondo según tu preferencia */
-    color: #08d9d6; /* Cambia el color del texto según tu preferencia */
-    border-color: #252a34; /* Borde en estado deshabilitado */
-}
-
-/* Estilos para el botón anterior y siguiente */
-.pagination .page-item.previous .page-link,
-.pagination .page-item.next .page-link {
-    background-color: #08d9d6; /* Cambia el color de fondo según tu preferencia */
-    color: #ffffff; /* Cambia el color del texto según tu preferencia */
-    border-color: #08d9d6; /* Borde en estado normal */
-}
-
-/* Estilos para el botón anterior y siguiente deshabilitados */
-.pagination .page-item.previous.disabled .page-link,
-.pagination .page-item.next.disabled .page-link {
-    background-color: #252a34; /* Cambia el color de fondo según tu preferencia */
-    color: #08d9d6; /* Cambia el color del texto según tu preferencia */
-    border-color: #252a34; /* Borde en estado deshabilitado */
+/* Estilos para el fondo del custom-content */
+.custom-content {
+    background-color: #010e0e; /* Color de fondo del custom-content */
 }
 
 
-
-/* Estilos para el título del encabezado de la tarjeta */
-.card-header h3.card-title {
-    margin: 0; /* Eliminar margen del título */
-}
-
-/* Estilos para el ícono del encabezado de la tarjeta */
-.card-header .fas.fa-search {
-    margin-right: 5px; /* Espaciado entre el ícono y el texto */
-}
-
-
-
-/* Estilos para el encabezado de contenido */
-.content-header.custom-content-header {
-    background-color: #252a34; /* Cambia el color de fondo según tu preferencia */
-    color: #ffffff; /* Cambia el color del texto según tu preferencia */
-    padding: 10px; /* Espaciado interno */
-    border-bottom: none; /* Borde inferior */
-}
-
-/* Estilos para el título del encabezado de contenido */
-.content-header.custom-content-header h1 {
-    margin: 0; /* Eliminar margen del título */
-}
-
-/* Estilos para el texto pequeño (small) del encabezado de contenido */
-.content-header.custom-content-header small.custom-small {
-    color: #08d9d6; /* Cambia el color del texto pequeño según tu preferencia */
-}
-
-/* Estilos para los elementos de la ruta de navegación (breadcrumb) del encabezado de contenido */
-.content-header.custom-content-header .breadcrumb.custom-breadcrumb {
-    background-color: transparent; /* Cambia el color de fondo de los elementos según tu preferencia */
-    margin-bottom: 0; /* Eliminar margen inferior */
-}
-
-/* Estilos para los enlaces de la ruta de navegación (breadcrumb) del encabezado de contenido */
-.content-header.custom-content-header .breadcrumb.custom-breadcrumb .breadcrumb-item a.custom-breadcrumb-link {
-    color: #08d9d6; /* Cambia el color del enlace según tu preferencia */
-}
-
-/* Estilos para los enlaces de la ruta de navegación (breadcrumb) activos del encabezado de contenido */
-.content-header.custom-content-header .breadcrumb.custom-breadcrumb .breadcrumb-item.active {
-    color: #08d9d6; /* Cambia el color del enlace activo según tu preferencia */
-}
-
-
-/* Estilos para los botones del card-footer */
-.card-footer .btn {
-    background-color: #08d9d6; /* Color de fondo inicial del botón */
-    color: #252a34; /* Color del texto inicial del botón */
-    border-color: #08d9d6; /* Color del borde inicial del botón */
-    border-radius: 4px; /* Agrega bordes redondeados */
-    padding: 8px 20px; /* Ajusta el espaciado interno del botón */
-    margin-right: 10px; /* Agrega un margen derecho entre los botones */
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Agrega transiciones suaves para el cambio de color */
-}
-
-/* Estilos para el ícono dentro del botón */
-.card-footer .btn i {
-    margin-right: 5px; /* Agrega un margen derecho entre el ícono y el texto */
-}
-
-/* Estilos para el botón cuando el cursor está encima (hover) */
-.card-footer .btn:hover {
-    background-color: #252a34; /* Color de fondo al pasar el cursor sobre el botón */
-    color: #08d9d6; /* Color del texto al pasar el cursor sobre el botón */
-    border-color: #08d9d6; /* Color del borde al pasar el cursor sobre el botón */
-}
-
-/* Estilos para el botón cuando está activo (seleccionado) */
-.card-footer .btn:active {
-    background-color: #05a3aa; /* Color de fondo al seleccionar el botón */
-    color: #ffffff; /* Color del texto al seleccionar el botón */
-    border-color: #05a3aa; /* Color del borde al seleccionar el botón */
-}
-
-
-
-/* Estilos para el sidebar */
+/* Estilos para el fondo del sidebar */
 .main-sidebar {
     background-color: #252a34; /* Color de fondo del sidebar */
-    color: #ffffff; /* Color del texto del sidebar */
 }
 
-/* Estilos para el logo y el texto del brand-link */
-.brand-link .brand-text {
-    color: #ffffff; /* Color del texto del brand-link */
+/* Estilos para los bordes del sidebar */
+.main-sidebar {
+    border-right: 2px solid #08d9d6; /* Bordes del sidebar */
 }
 
-/* Estilos para el usuario panel */
+/* Estilos para el borde de los íconos del sidebar */
+.main-sidebar .nav-link i {
+    border: 1px solid #08d9d6; /* Borde de los íconos del sidebar */
+    border-radius: 50%; /* Para hacer los íconos redondeados */
+    padding: 5px; /* Ajustar el espacio entre el ícono y el borde */
+}
+
+/* Estilos para el borde del avatar (imagen) */
+.user-panel .image img {
+    border: 2px solid #08d9d6; /* Borde del avatar (imagen) */
+    border-radius: 50%; /* Para hacer el avatar redondeado */
+}
+
+/* Estilos para el enlace (a) dentro del user-panel */
 .user-panel .info a {
-    color: #ffffff; /* Color del texto del usuario panel */
+    border-bottom: 1px solid #08d9d6; /* Borde inferior del enlace (a) */
+    padding-bottom: 2px; /* Ajustar el espacio entre el texto y el borde inferior */
 }
-
-/* Estilos para los elementos de la lista del sidebar */
-.nav-sidebar .nav-item .nav-link {
-    color: #08d9d6; /* Color del texto de los elementos de la lista */
+.user-panel {
+    border-bottom: 2px solid #08d9d6; /* Color y grosor del borde inferior */
+    padding-bottom: 10px; /* Espacio entre el contenido y el borde inferior */
 }
-
-/* Estilos para el icono de los elementos de la lista del sidebar */
-.nav-sidebar .nav-item .nav-link i {
-    color: #08d9d6; /* Color del icono de los elementos de la lista */
-}
-
-/* Estilos para el fondo de los elementos de la lista cuando se les hace hover */
-.nav-sidebar .nav-item .nav-link:hover {
-    background-color: #010e0e; /* Color de fondo al hacer hover en los elementos de la lista */
-}
-
-/* Estilos para el fondo de los elementos de la lista activos */
-.nav-sidebar .nav-item .nav-link.active {
-    background-color: #05a3aa; /* Color de fondo de los elementos de la lista activos */
-}
-
-/* Estilos para el color de fondo de los elementos desplegables de la lista */
-.nav-sidebar .nav-treeview {
-    background-color: #252a34; /* Color de fondo de los elementos desplegables de la lista */
-}
-
-/* Estilos para el color de texto de los elementos desplegables de la lista */
-.nav-sidebar .nav-treeview li a.nav-link {
-    color: #ffffff; /* Color de texto de los elementos desplegables de la lista */
-}
-
-/* Estilos para el color de texto de los elementos desplegables activos de la lista */
-.nav-sidebar .nav-treeview li a.nav-link.active {
-    color: #08d9d6; /* Color de texto de los elementos desplegables activos de la lista */
-}
-
-
-.brand-image {
-    width: 100%; /* Ajusta el ancho del círculo */
-    height: 100%; /* Ajusta la altura del círculo */
-    border-radius: 100%; /* Hace que la imagen sea un círculo */
-    object-fit: cover; /* Ajusta la imagen para que encaje completamente en el círculo */
-}
-
-
-/* Estilos para los campos de formulario */
-.form-group input[type="text"],
-.form-group input[type="email"],
-.form-group select {
-    background-color: #252a34; /* Cambia el color de fondo según tu preferencia */
-    color: #ffffff; /* Cambia el color del texto según tu preferencia */
-    border: 1px solid #08d9d6; /* Cambia el color del borde según tu preferencia */
-    border-radius: 4px; /* Agrega bordes redondeados */
-    padding: 8px 10px; /* Ajusta el espaciado interno del campo */
-}
-
-/* Estilos para el texto de las etiquetas de los campos */
-.form-group label {
-    color: #08d9d6; /* Cambia el color del texto de la etiqueta según tu preferencia */
-}
-/* Estilos para el selector de fecha */
-.form-group input[type="date"] {
-    background-color: #252a34; /* Cambia el color de fondo según tu preferencia */
-    color: #ffffff; /* Cambia el color del texto según tu preferencia */
-    border: 1px solid #08d9d6; /* Cambia el color del borde según tu preferencia */
-    border-radius: 4px; /* Agrega bordes redondeados */
-    padding: 8px 10px; /* Ajusta el espaciado interno del campo */
-}
-
-
+/* Estilo para el pie de página */
+.main-footer {
+    background-color: #252a34;
+    color: #ffffff;
+    border-top: 2px solid #08d9d6;
+    border-bottom: 2px solid #08d9d6;
+  }
+  
