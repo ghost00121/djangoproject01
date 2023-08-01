@@ -1,0 +1,13 @@
+/* Estilos para el encabezado de la tarjeta */
+.card {
+    margin-bottom: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+.card-header {
+    background-color: #252a34 !important; /* Cambia el color de fondo según tu preferencia */
+    color: #ffffff; /* Cambia el color del texto según tu preferencia */
+    padding: 10px; /* Espaciado interno */
+    border-bottom: 1px solid #08d9d6; /* Borde inferior */
+    border-radius: 4px 4px 0 0; /* Radio de los bordes */
+}

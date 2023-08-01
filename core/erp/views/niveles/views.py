@@ -107,7 +107,7 @@ class NivelesDeleteView(DeleteView):
     model = Niveles
     template_name = 'niveles/delete.html'
     success_url = reverse_lazy('erp:niveles_list')
-
+    @method_decorator(csrf_exempt)
     @method_decorator(login_required)
     def dispatch(self, request, *args, **kwargs):
         self.object = self.get_object()

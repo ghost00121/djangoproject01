@@ -106,7 +106,7 @@ class ProfesoresDeleteView(DeleteView):  # Cambia el nombre de la clase
     model = Profesores  # Cambia el modelo
     template_name = 'profesores/delete.html'  # Cambia el nombre de la plantilla
     success_url = reverse_lazy('erp:profesores_list')  # Cambia el nombre de la URL para listar docentes
-
+    @method_decorator(csrf_exempt)
     @method_decorator(login_required)
     def dispatch(self, request, *args, **kwargs):
         self.object = self.get_object()

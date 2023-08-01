@@ -109,7 +109,7 @@ class EstudiantesDeleteView(DeleteView):
     model = Estudiante
     template_name = 'estudiantes/delete.html'
     success_url = reverse_lazy('erp:estudiante_list')
-
+    @method_decorator(csrf_exempt)
     @method_decorator(login_required)
     def dispatch(self, request, *args, **kwargs):
         self.object = self.get_object()
